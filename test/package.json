@@ -1,0 +1,29 @@
+{
+	"type": "module",
+	"scripts": {
+		"test": "vitest run",
+		"test:watch": "vitest"
+	},
+	"dependencies": {
+		"@davidcal/node-ham": "file:.."
+	},
+	"devDependencies": {
+		"vitest": "^2.0.0"
+	},
+	"pnpm": {
+		"overrides": {
+			"@davidcal/node-ham-free": "link:../node-ham-free"
+		},
+		"dependenciesMeta": {
+			"@davidcal/node-ham": {
+				"injected": true
+			}
+		},
+		"ignoredBuiltDependencies": [
+			"esbuild"
+		],
+		"onlyBuiltDependencies": [
+			"fs-ext"
+		]
+	}
+}

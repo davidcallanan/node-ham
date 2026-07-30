@@ -1,0 +1,16 @@
+{
+	"name": "@davidcal/node-ham",
+	"version": "1.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/davidcallanan/node-ham.git"
+	},
+	"exports": {
+		".": "./src/index.js"
+	},
+	"dependencies": {
+		"@davidcal/node-ham-free": "^1.0.0",
+		"crc-32": "^1.2.2",
+		"fs-ext": "^2.1.1"
+	}
+}
