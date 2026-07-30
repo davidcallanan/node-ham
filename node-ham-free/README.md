@@ -1,6 +1,6 @@
 # @davidcal/node-ham-free
 
-**Latest version:** v1.0.0
+**Latest version:** v1.0.1
 
 This is the "free" variant of `@davidcal/node-ham`.
 

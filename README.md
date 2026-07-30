@@ -1,6 +1,6 @@
 # @davidcal/node-ham: Heavy Atomic Metadata
 
-**Latest version:** v1.0.0
+**Latest version:** v1.0.1
 
 ## Overview
 

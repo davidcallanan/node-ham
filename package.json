@@ -1,6 +1,6 @@
 {
 	"name": "@davidcal/node-ham",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
@@ -10,7 +10,7 @@
 		".": "./src/index.js"
 	},
 	"dependencies": {
-		"@davidcal/node-ham-free": "^1.0.0",
+		"@davidcal/node-ham-free": "^1.0.1",
 		"crc-32": "^1.2.2",
 		"fs-ext": "^2.1.1"
 	}

@@ -97,6 +97,18 @@ export const create_ham = async (dependencies, options) => {
 					
 					await dependencies.fs.rm(path_a, { force: true });
 					
+					const fd_base = await dependencies.fs.open(path_base, "r");	
+					
+					try {
+						await dependencies.fsync_dir(fd_base.fd);
+					} catch (e) {
+						await fd_base.close();
+						
+						throw new Error(`Failed to sync changes with disk. Ensure you are using Linux.\n\nCaused by:\n\n${e.message}`);
+					}
+					
+					await fd_base.close();
+					
 					return;
 				}
 
