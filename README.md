@@ -1,5 +1,9 @@
 # @davidcal/node-ham: Heavy Atomic Metadata
 
+**Latest version:** v1.0.0
+
+## Overview
+
 This package exposes atomic key-value storage "of last resort", atop a Linux filesystem. It's recommended to only use this for critical durable metadata, before bootstrapping a larger database that can expose a richer and more efficient primitive. Refrain from storing large quantities of data using this package. The implementation adds very basic error-correction, but this is in no way a substitute for proper error correction via the likes of a RAID filesystem.
 
 There are two variants of this package:
@@ -33,3 +37,7 @@ await entry.read(); // undefined
 // Unlock the entry when done.
 await entry.close();
 ```
+
+## Contributing
+
+See `CONTRIBUTING.md`.

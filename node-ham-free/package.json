@@ -2,9 +2,12 @@
 	"type": "module",
 	"name": "@davidcal/node-ham-free",
 	"version": "1.0.0",
+	"license": "MIT",
+	"exports": {
+		".": "./src/index.js"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/davidcallanan/node-ham.git"
-	},
-	"main": "src/index.js"
+	}
 }
